@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewNotesActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Write Your Note here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Description"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:hint="Enter Description"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_Title"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Title" />
+
+    <EditText
+        android:id="@+id/editText_Title"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:hint="Enter Title"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/save_notes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/edit_button_shape"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/kurale"
+        android:padding="10dp"
+        android:text="Save Notes"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Description"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/editText_Description"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Description" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017104391229",
+    "project_id": "login-and-sign-up-fireba-1a6eb",
+    "storage_bucket": "login-and-sign-up-fireba-1a6eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017104391229:android:6948d2531beb26c5abde54",
+        "android_client_info": {
+          "package_name": "vv.monika.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJGv76fHkMvzo5baSlv7NBZgaFP0YoqlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="vv.monika.firebase" />
+                  <option name="mobileSdkAppId" value="1:1017104391229:android:6948d2531beb26c5abde54" />
+                  <option name="projectId" value="login-and-sign-up-fireba-1a6eb" />
+                  <option name="projectNumber" value="1017104391229" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
