@@ -42,10 +42,9 @@ class AddNewNotesActivity : AppCompatActivity() {
                 val currentUser: FirebaseUser? = auth.currentUser
                 currentUser?.let { user ->
 //                    generates unique keys for each notes
-                    val noteskey =
-                        databaseReference.child("users").child(user.uid).child("Notes").push().key
+                    val noteskey = databaseReference.child("users").child(user.uid).child("Notes").push().key
 //                    note item instance
-                    val notesItem = NotesItem(title, description, noteskey?: "")
+                    val notesItem = NotesItem(title, description, noteskey ?: "")
                     if (noteskey != null) {
 //                        add notes to the user note
                         databaseReference.child("users").child(user.uid).child("notes")
@@ -69,4 +68,6 @@ class AddNewNotesActivity : AppCompatActivity() {
         }
 
     }
+
+
 }

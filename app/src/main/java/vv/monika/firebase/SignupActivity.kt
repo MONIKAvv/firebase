@@ -44,18 +44,18 @@ class SignupActivity : AppCompatActivity() {
             } else if (password != repeat_password) {
                 Toast.makeText(this, "Repeat Password not matched", Toast.LENGTH_SHORT).show()
             } else {
-    auth.createUserWithEmailAndPassword(email, password)
-        .addOnCompleteListener(this){
-            task ->
-            if (task.isSuccessful){
-                Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
+                auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT)
+                                .show()
 
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-            }else{
-                Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show()
-            }
-        }
+                            startActivity(Intent(this, LoginActivity::class.java))
+                            finish()
+                        } else {
+                            Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show()
+                        }
+                    }
             }
 
 
